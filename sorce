@@ -1,0 +1,304 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+local debounce = false
+local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+local TheUndergroundWar = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local GetPointRed = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local GetPointBlue = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local SetSpeed = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Minimize = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Label2 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Add = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Label3 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+
+--Properties:
+
+TheUndergroundWar.Name = "TheUndergroundWar"
+TheUndergroundWar.Parent = game.CoreGui
+TheUndergroundWar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = TheUndergroundWar
+Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.011934693, 0, 0.477950007, 0)
+Main.Size = UDim2.new(0.197989896, 0, 0.505244374, 0)
+Main.Active = true
+Main.Draggable = true
+Main.Visible = false
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label.BorderSizePixel = 0
+Label.Size = UDim2.new(1, 0, 0.14246282, 0)
+Label.Font = Enum.Font.GothamBlack
+Label.Text = "The UnderGround Pigeon"
+Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label.TextScaled = true
+Label.TextSize = 14.000
+Label.TextStrokeTransparency = 0.000
+Label.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.300000012, 0)
+UICorner.Parent = Label
+
+GetPointRed.Name = "GetPointRed"
+GetPointRed.Parent = Main
+GetPointRed.BackgroundColor3 = Color3.fromRGB(255, 69, 78)
+GetPointRed.BorderSizePixel = 0
+GetPointRed.Position = UDim2.new(0.0690229461, 0, 0.202878028, 0)
+GetPointRed.Size = UDim2.new(0.858162761, 0, 0.123590469, 0)
+GetPointRed.Font = Enum.Font.GothamBlack
+GetPointRed.Text = "Get Point for Red"
+GetPointRed.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetPointRed.TextScaled = true
+GetPointRed.TextSize = 14.000
+GetPointRed.TextStrokeTransparency = 0.000
+GetPointRed.TextWrapped = true
+GetPointRed.MouseButton1Click:Connect(function()
+	if debounce then return end
+	debounce = true
+	HRP.CFrame = CFrame.new(6.5, 18.5, -73.5, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	wait(.1)
+	HRP.Anchored = true
+	HRP.CFrame = CFrame.new(27.7866478, 14.5999975, 66.5588303, 0.00158275536, 3.61810269e-11, 0.999998748, -6.23008312e-09, 1, -2.63203626e-11, -0.999998748, -6.23003382e-09, 0.00158275536)
+	wait(6)
+	HRP.Anchored = false
+	HRP.CFrame = CFrame.new(-7.5, 18.5, 75.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(.1)
+	HRP.CFrame =CFrame.new(83, 16.2000008, 53, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	GetPointRed.Text = '5'
+	wait(1)
+	GetPointRed.Text = '4'
+	wait(1)
+	GetPointRed.Text = '3'
+	wait(1)
+	GetPointRed.Text = '2'
+	wait(1)
+	GetPointRed.Text = '1'
+	wait()
+	GetPointRed.Text = 'Get Point for Red'
+	debounce = false
+end)
+
+UICorner_2.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_2.Parent = GetPointRed
+
+GetPointBlue.Name = "GetPointBlue"
+GetPointBlue.Parent = Main
+GetPointBlue.BackgroundColor3 = Color3.fromRGB(82, 157, 255)
+GetPointBlue.BorderSizePixel = 0
+GetPointBlue.Position = UDim2.new(0.0690229461, 0, 0.363293231, 0)
+GetPointBlue.Size = UDim2.new(0.858162761, 0, 0.123590469, 0)
+GetPointBlue.Font = Enum.Font.GothamBlack
+GetPointBlue.Text = "Get Point for Blue"
+GetPointBlue.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetPointBlue.TextScaled = true
+GetPointBlue.TextSize = 14.000
+GetPointBlue.TextStrokeTransparency = 0.000
+GetPointBlue.TextWrapped = true
+GetPointBlue.MouseButton1Click:Connect(function()
+	if debounce then return end
+	debounce = true
+	HRP.CFrame = CFrame.new(-7.5, 18.5, 75.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(.1)
+	HRP.Anchored = true
+	HRP.CFrame = CFrame.new(-28.4100533, 14.5999975, -68.2288513, -0.0518162809, -5.43291065e-08, -0.998656631, -5.95603176e-08, 1, -5.13118437e-08, 0.998656631, 5.68215199e-08, -0.0518162809)
+	wait(6)
+	HRP.Anchored = false
+	HRP.CFrame = CFrame.new(6.5, 18.5, -73.5, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	wait(.1)
+	HRP.CFrame = CFrame.new(47, 16.2000008, -133, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	GetPointBlue.Text = '5'
+	wait(1)
+	GetPointBlue.Text = '4'
+	wait(1)
+	GetPointBlue.Text = '3'
+	wait(1)
+	GetPointBlue.Text = '2'
+	wait(1)
+	GetPointBlue.Text = '1'
+	wait()
+	GetPointBlue.Text = 'Get Point for Blue'
+	debounce = false
+end)
+
+UICorner_3.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_3.Parent = GetPointBlue
+
+TextButton.Name = "-"
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(83, 255, 138)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.100748837, 0, 0.528426528, 0)
+TextButton.Size = UDim2.new(0.172883451, 0, 0.123590469, 0)
+TextButton.Font = Enum.Font.GothamBlack
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Click:Connect(function()
+	Label3.Text -= 1
+end)
+
+UICorner_4.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_4.Parent = TextButton
+
+SetSpeed.Name = "SetSpeed"
+SetSpeed.Parent = Main
+SetSpeed.BackgroundColor3 = Color3.fromRGB(244, 255, 119)
+SetSpeed.BorderSizePixel = 0
+SetSpeed.Position = UDim2.new(0.0690229461, 0, 0.702995956, 0)
+SetSpeed.Size = UDim2.new(0.858162761, 0, 0.123590469, 0)
+SetSpeed.Font = Enum.Font.GothamBlack
+SetSpeed.Text = "Set Speed"
+SetSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetSpeed.TextScaled = true
+SetSpeed.TextSize = 14.000
+SetSpeed.TextStrokeTransparency = 0.000
+SetSpeed.TextWrapped = true
+SetSpeed.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Label3.Text
+end)
+
+UICorner_5.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_5.Parent = SetSpeed
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Main
+Minimize.BackgroundColor3 = Color3.fromRGB(72, 49, 189)
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.0690229535, 0, 0.84689784, 0)
+Minimize.Size = UDim2.new(0.172883451, 0, 0.123590469, 0)
+Minimize.Font = Enum.Font.GothamBlack
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextScaled = true
+Minimize.TextSize = 14.000
+Minimize.TextWrapped = true
+Minimize.MouseButton1Click:Connect(function()
+	Main.Visible = false
+	Open.Visible = true
+end)
+
+UICorner_6.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_6.Parent = Minimize
+
+UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_7.Parent = Main
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(189, 0, 3)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.754302323, 0, 0.84689784, 0)
+Close.Size = UDim2.new(0.172883451, 0, 0.123590469, 0)
+Close.Font = Enum.Font.GothamBlack
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+	TheUndergroundWar:Destroy()
+end)
+
+UICorner_8.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_8.Parent = Close
+
+Label2.Name = "Label2"
+Label2.Parent = Main
+Label2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label2.BorderSizePixel = 0
+Label2.Position = UDim2.new(0.276015371, 0, 0.84689796, 0)
+Label2.Size = UDim2.new(0.444796771, 0, 0.123590454, 0)
+Label2.Font = Enum.Font.GothamBlack
+Label2.Text = "Made By: PigeonDude"
+Label2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label2.TextScaled = true
+Label2.TextSize = 14.000
+Label2.TextStrokeTransparency = 0.000
+Label2.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_9.Parent = Label2
+
+Add.Name = "Add"
+Add.Parent = Main
+Add.BackgroundColor3 = Color3.fromRGB(83, 255, 138)
+Add.BorderSizePixel = 0
+Add.Position = UDim2.new(0.719403803, 0, 0.528426528, 0)
+Add.Size = UDim2.new(0.172883451, 0, 0.123590469, 0)
+Add.Font = Enum.Font.GothamBlack
+Add.Text = "+"
+Add.TextColor3 = Color3.fromRGB(255, 255, 255)
+Add.TextScaled = true
+Add.TextSize = 14.000
+Add.TextStrokeTransparency = 0.000
+Add.TextWrapped = true
+Add.MouseButton1Click:Connect(function()
+	Label3.Text += 1
+end)
+
+UICorner_10.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_10.Parent = Add
+
+Label3.Name = "Label3"
+Label3.Parent = Main
+Label3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label3.BorderSizePixel = 0
+Label3.Position = UDim2.new(0.317259043, 0, 0.526067555, 0)
+Label3.Size = UDim2.new(0.362464666, 0, 0.123590454, 0)
+Label3.Font = Enum.Font.GothamBlack
+Label3.Text = 16
+Label3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label3.TextScaled = true
+Label3.TextSize = 14.000
+Label3.TextStrokeTransparency = 0.000
+Label3.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_11.Parent = Label3
+
+Open.Name = "Open"
+Open.Parent = TheUndergroundWar
+Open.BackgroundColor3 = Color3.fromRGB(67, 86, 255)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.0118620992, 0, 0.549719453, 0)
+Open.Size = UDim2.new(0.126485184, 0, 0.0604200363, 0)
+Open.Font = Enum.Font.GothamBlack
+Open.Text = "Open Gui"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextStrokeTransparency = 0.000
+Open.TextWrapped = true
+Open.MouseButton1Click:Connect(function()
+	Main.Visible = true
+	Open.Visible = false
+end)
+
+UICorner_12.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_12.Parent = Open
